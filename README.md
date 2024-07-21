@@ -2,7 +2,7 @@
 
 ![John Doe](https://example.com/path/to/your/image.jpg)
 
-Hello! I'm John Doe, a passionate [Your Profession] based in [Your Location]. I specialize in [Your Key Skills or Areas of Expertise].
+I'm Noah Chander, a highly self-motivated Mechanical Engineering MEng student at University College London (26' grad), based in London, England.
 
 - 📧 [Gmail](mailto:chandernoah@gmail.com)
 - 💼 [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/)
