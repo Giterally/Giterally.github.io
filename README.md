@@ -1,16 +1,16 @@
 ## About Me
 
-![John Doe](https://example.com/path/to/your/image.jpg)
+(https://liveuclac-my.sharepoint.com/:i:/r/personal/zcemrpo_ucl_ac_uk/Documents/Downloads/linkedinHEATSHOT.jpeg?csf=1&web=1&e=NEgjJX)
 
 I'm Noah Chander, a highly self-motivated Mechanical Engineering MEng student at University College London (26' grad), based in London, England.
 
-- 📧 [Gmail](mailto:chandernoah@gmail.com)
+- 📧 [chandernoah@gmail.com]
 - 💼 [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/)
 - 🐙 [GitHub](https://github.com/Giterally)
 
 ## Projects
 
-### Project 1: Comparing the Efficacy of 2 Machine Learning Stock Predictors
+### 1: Comparing the Efficacy of 2 Machine Learning Stock Predictors
 
 ![Project 1 Screenshot](https://example.com/path/to/project1/screenshot.jpg)
 
@@ -27,7 +27,7 @@ I'm Noah Chander, a highly self-motivated Mechanical Engineering MEng student at
 
 [View Project](https://github.com/johndoe/project1) | [Live Demo](https://www.project1demo.com)
 
-### Project 2: [Project Name]
+### 2: Building a Website 
 
 ![Project 2 Screenshot](https://example.com/path/to/project2/screenshot.jpg)
 
