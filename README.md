@@ -1,28 +1,29 @@
-# John Doe's Portfolio
-
 ## About Me
 
 ![John Doe](https://example.com/path/to/your/image.jpg)
 
 Hello! I'm John Doe, a passionate [Your Profession] based in [Your Location]. I specialize in [Your Key Skills or Areas of Expertise].
 
-- 🌐 [Personal Website](https://www.johndoe.com)
-- 📧 [Email](mailto:john@example.com)
-- 💼 [LinkedIn](https://www.linkedin.com/in/johndoe)
-- 🐙 [GitHub](https://github.com/johndoe)
+- 📧 [Gmail](mailto:chandernoah@gmail.com)
+- 💼 [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/)
+- 🐙 [GitHub](https://github.com/Giterally)
 
 ## Projects
 
-### Project 1: [Project Name]
+### Project 1: Comparing the Efficacy of 2 Machine Learning Stock Predictors
 
 ![Project 1 Screenshot](https://example.com/path/to/project1/screenshot.jpg)
 
-**Description:** Brief description of your project.
+**Description:** Developing a Python machine learning model to predict movements in securities pricing
+• Developing a trading simulation in C++ to track the efficacy of the model.
+• Coding in Python and the Scikit-learn library (Random Forest Generator) for one model.
+• Coding with Pytorch developing a stock price forecaster using a Recurrent Neural Network: LSTM (Long Short-Term Memory) for the other model.
+• Training both models on the same dataset of daily AMZN price history and comparing output in terms of Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R-squared (R²) value.
+• Planning integration of pre-trained Large Language Models from the Hugging Face repository for news feed price predictions.
 
 **Technologies used:**
-- Tech 1
-- Tech 2
-- Tech 3
+- Python: Numpy, Pandas, Scikit-Learn, Pytorch
+- C++
 
 [View Project](https://github.com/johndoe/project1) | [Live Demo](https://www.project1demo.com)
 
