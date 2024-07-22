@@ -77,4 +77,4 @@ Please note that I cannot share code since it is proprietary software owned by t
 
 ## Contact
 
-Feel free to reach out to me on [Gmail](mailto:chandernoah@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/).
+Feel free to reach out to me at chandernoah@gmail.com or connect with me on [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/).
