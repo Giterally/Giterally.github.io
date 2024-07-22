@@ -4,7 +4,7 @@
 
 I'm Noah Chander, a highly self-motivated Mechanical Engineering MEng student at University College London (26' grad), based in London, England.
 
-- 📧 [chandernoah@gmail.com]
+- 📧 chandernoah@gmail.com
 - 💼 [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/)
 - 🐙 [GitHub](https://github.com/Giterally)
 
@@ -14,7 +14,8 @@ I'm Noah Chander, a highly self-motivated Mechanical Engineering MEng student at
 
 ![Project 1 Screenshot](https://example.com/path/to/project1/screenshot.jpg)
 
-**Description:** Developing a Python machine learning model to predict movements in securities pricing
+**Description:**
+• Developing a Python machine learning model to predict movements in securities pricing
 • Developing a trading simulation in C++ to track the efficacy of the model.
 • Coding in Python and the Scikit-learn library (Random Forest Generator) for one model.
 • Coding with Pytorch developing a stock price forecaster using a Recurrent Neural Network: LSTM (Long Short-Term Memory) for the other model.
