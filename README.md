@@ -35,7 +35,7 @@ In my free time, I've completed Codecademy courses on data analysis with Pandas,
 For more details, please see my github repository:
 [View Project](https://github.com/Giterally/ML_Stock_Predictor_NWC)
 
-### 2: Building a Website 
+### 2: Building a Website for a UCL Professor Working in the Disability Space
 In the summer of 2024, I interned as a software engineering at UCL in the department Computer Science, building a website interface for a mechanical tool that helps visually-impaired users interpret images through a refreshable braille surface. 
 
 **Description:**
@@ -58,8 +58,8 @@ In the summer of 2024, I interned as a software engineering at UCL in the depart
 For more details, please see my github repository:
 [View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
 
-### 3: Developing a Website Supporting Online, On-demand Digital Tools
-During my 2023 spring internship at Digital McKinsey, I met a consultant who went on to build a startup which would act an as online marketplace for digital tools, and I did some work for him in my second year at university.
+### 3: Development of Online, On-demand Digital Tools
+During my 2023 spring internship at Digital McKinsey, I met a consultant who went on to build a startup which would act an as online marketplace for digital tools, and I did some work for him in my second year at university, building digital tools alongside other programmers and using open-source code, as well as developing the website itself.
 
 **Description:**
 - Developed front-end (using NiceGUI) & adapted back-end Python code to convert open-source code into web applications.
