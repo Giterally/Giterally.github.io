@@ -1,8 +1,8 @@
 ## About Me
 
-(https://liveuclac-my.sharepoint.com/:i:/r/personal/zcemrpo_ucl_ac_uk/Documents/Downloads/linkedinHEATSHOT.jpeg?csf=1&web=1&e=NEgjJX)
+![Linkedin Headshot](giterally_images/Linkedin_headshot.jpeg)
 
-I'm Noah Chander, a highly self-motivated Mechanical Engineering MEng student at University College London (26' grad), based in London, England.
+I am a highly self-motivated Mechanical Engineering MEng student at University College London (26' grad), based in London, England.
 
 - 📧 chandernoah@gmail.com
 - 💼 [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/)
@@ -11,8 +11,6 @@ I'm Noah Chander, a highly self-motivated Mechanical Engineering MEng student at
 ## Projects
 
 ### 1: Comparing the Efficacy of 2 Machine Learning Stock Predictors
-
-![Project 1 Screenshot](https://example.com/path/to/project1/screenshot.jpg)
 
 **Description:**
 • Developing a Python machine learning model to predict movements in securities pricing
@@ -26,11 +24,13 @@ I'm Noah Chander, a highly self-motivated Mechanical Engineering MEng student at
 - Python: Numpy, Pandas, Scikit-Learn, Pytorch
 - C++
 
-[View Project](https://github.com/johndoe/project1) | [Live Demo](https://www.project1demo.com)
+
+![Linkedin Headshot](giterally_images/ML_RES.PNG)
+
+
+[View Project](https://github.com/Giterally/ML_Stock_Predictor_NWC)
 
 ### 2: Building a Website 
-
-![Project 2 Screenshot](https://example.com/path/to/project2/screenshot.jpg)
 
 **Description:** Brief description of your project.
 
@@ -39,7 +39,7 @@ I'm Noah Chander, a highly self-motivated Mechanical Engineering MEng student at
 - Tech 2
 - Tech 3
 
-[View Project](https://github.com/johndoe/project2) | [Live Demo](https://www.project2demo.com)
+[View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
 
 ### Project 3: [Project Name]
 
