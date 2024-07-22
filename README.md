@@ -24,10 +24,9 @@ I am a highly self-motivated Mechanical Engineering MEng student at University C
 - Python: Numpy, Pandas, Scikit-Learn, Pytorch
 - C++
 
+![Stock Predictor Output](giterally_images/ML_RES.PNG)
 
-![Linkedin Headshot](giterally_images/ML_RES.PNG)
-
-
+For more details, please see my github repository:
 [View Project](https://github.com/Giterally/ML_Stock_Predictor_NWC)
 
 ### 2: Building a Website 
@@ -35,10 +34,17 @@ I am a highly self-motivated Mechanical Engineering MEng student at University C
 **Description:** Brief description of your project.
 
 **Technologies used:**
-- Tech 1
-- Tech 2
-- Tech 3
+- Next.js, React
+- JS, HTML, CSS
+- Page navigation, authentication, contact page etc.
 
+![Homepage](giterally_images/tacilia_homepage.jpeg)
+![About](giterally_images/tacilia_about.jpeg)
+![Contact](giterally_images/tacilia_contact.jpeg)
+![Input](giterally_images/tacilia_input.jpeg)
+![Login](giterally_images/tacilia_login.jpeg)
+
+For more details, please see my github repository:
 [View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
 
 ### Project 3: [Project Name]
