@@ -13,12 +13,9 @@ I am a highly self-motivated Mechanical Engineering MEng student at University C
 ### 1: Comparing the Efficacy of 2 Machine Learning Stock Predictors
 
 **Description:**
-• Developing a Python machine learning model to predict movements in securities pricing
-• Developing a trading simulation in C++ to track the efficacy of the model.
-• Coding in Python and the Scikit-learn library (Random Forest Generator) for one model.
-• Coding with Pytorch developing a stock price forecaster using a Recurrent Neural Network: LSTM (Long Short-Term Memory) for the other model.
-• Training both models on the same dataset of daily AMZN price history and comparing output in terms of Mean Absolute Error (MAE), Root Mean Squared Error (RMSE), R-squared (R²) value.
-• Planning integration of pre-trained Large Language Models from the Hugging Face repository for news feed price predictions.
+- Developing a stock predictor using Python, comparing the efficacy of the scikit-learn library’s Random Forest Generator to the use of PyTorch for stock price forecasting using a Recurrent Neural Network: LSTM (Long Short-Term Memory).
+- Executed quantitative methods such as rolling averages and threshold probabilities, evaluating output based on various error metrics as well as a trading simulator I built using C++.
+- Planning integration of pre-trained LLMs from Hugging Face to make real-time predictions on price reactions to news feed.
 
 **Technologies used:**
 - Python: Numpy, Pandas, Scikit-Learn, Pytorch
@@ -31,7 +28,11 @@ For more details, please see my github repository:
 
 ### 2: Building a Website 
 
-**Description:** Brief description of your project.
+**Description:**
+- Developing a website for the UCL Global Disability Innovation Hub to interface a device that produces a refreshable braille surface.
+- Employed Next.js (JS/HTML/CSS) for website GUI, with open-source GitHub code and an OpenAI API for image conversion.
+- Carried out live trials and testing with potential users and pitching to potential investors to iterate a Figma UX design for the website.
+- Implemented a contact page, user authentication and live notifications, alongside worker threads to handle concurrent API requests.
 
 **Technologies used:**
 - Next.js, React
@@ -47,18 +48,22 @@ For more details, please see my github repository:
 For more details, please see my github repository:
 [View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
 
-### Project 3: [Project Name]
+### 3: Developing a Website Supporting Online, On-demand Digital Tools
 
-![Project 3 Screenshot](https://example.com/path/to/project3/screenshot.jpg)
+![Nix.tech](https://example.com/path/to/project3/screenshot.jpg)
 
 **Description:** Brief description of your project.
 
 **Technologies used:**
-- Tech 1
-- Tech 2
-- Tech 3
+- Python: object oriented programming for tool-building and Nicegui for frontend
+- Next.js
+- Usage tracking & authentication
 
-[View Project](https://github.com/johndoe/project3) | [Live Demo](https://www.project3demo.com)
+Please note that I cannot share code since it is proprietary software owned by the startup Nix.
+[Live Demo](https://nix.tech/)
+
+
+
 
 ## Skills
 
