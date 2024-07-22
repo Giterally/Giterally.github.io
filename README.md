@@ -14,7 +14,8 @@ SQL, Power BI, Excel: IB Fundamentals and M&A financial modelling masterclasses.
 
 ## Education
 
-- **Degree**, Mechanical Engineering MEng (1st class grade predicted & achieved across 1st and 2nd year), graduate in June 2026
+- Current: UCL Mechanical Engineering MEng (1st class grade predicted & achieved across 1st and 2nd year), graduate in June 2026
+- Past: Hampton School 2022' A-levels: 4xD1 (A**) grades in Maths, Further Maths, Physics, Chemistry. 10xA* grades at GCSE (language - Spanish)
 
 ## Projects
 
