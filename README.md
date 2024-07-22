@@ -11,6 +11,7 @@ I am a highly self-motivated Mechanical Engineering MEng student at University C
 ## Projects
 
 ### 1: Comparing the Efficacy of 2 Machine Learning Stock Predictors
+In my free time, I've completed Codecademy courses on data analysis with Pandas, analysing financial data with Python and Machine Learning with Python, as well as some stuff with C++, and hence wanted to put my skills to use.
 
 **Description:**
 - Developing a stock predictor using Python, comparing the efficacy of the scikit-learn library’s Random Forest Generator to the use of PyTorch for stock price forecasting using a Recurrent Neural Network: LSTM (Long Short-Term Memory).
@@ -27,6 +28,7 @@ For more details, please see my github repository:
 [View Project](https://github.com/Giterally/ML_Stock_Predictor_NWC)
 
 ### 2: Building a Website 
+In the summer of 2024, I interned as a software engineering at UCL in the department Computer Science, building a website interface for a mechanical tool that helps visually-impaired users interpret images through a refreshable braille surface. 
 
 **Description:**
 - Developing a website for the UCL Global Disability Innovation Hub to interface a device that produces a refreshable braille surface.
@@ -49,10 +51,13 @@ For more details, please see my github repository:
 [View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
 
 ### 3: Developing a Website Supporting Online, On-demand Digital Tools
+During my 2023 spring internship at Digital McKinsey, I met a consultant who went on to build a startup which would act an as online marketplace for digital tools, and I did some work for him in my second year at university.
 
-![Nix.tech](https://example.com/path/to/project3/screenshot.jpg)
-
-**Description:** Brief description of your project.
+**Description:**
+- Developed front-end (using NiceGUI) & adapted back-end Python code to convert open-source code into web applications.
+- Collaborated and shared code within a team of 4 software developers on GitHub, following a documented framework to create tools.
+- Produced a range of digital tools such as a QR-code generator and a directory-to-html converter.
+- Augmented understanding of public software systems and services such as ArcGIS and IndexNow.
 
 **Technologies used:**
 - Python: object oriented programming for tool-building and Nicegui for frontend
@@ -79,4 +84,4 @@ Please note that I cannot share code since it is proprietary software owned by t
 
 ## Contact
 
-Feel free to reach out to me at [john@example.com](mailto:john@example.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/johndoe).
+Feel free to reach out to me on [Gmail](mailto:chandernoah@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/).
