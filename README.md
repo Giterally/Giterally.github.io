@@ -8,6 +8,14 @@ I am a highly self-motivated Mechanical Engineering MEng student at University C
 - 💼 [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/)
 - 🐙 [GitHub](https://github.com/Giterally)
 
+## Coding Skills
+
+SQL, Power BI, Excel: IB Fundamentals and M&A financial modelling masterclasses. Python: Analysing Financial Data & Portfolio Optimisation, Data Analysis with Pandas, Nicegui. Machine Learning: Pytorch, Scikit-Learn. MATLAB, JavaScript, HTML, CSS, React, Next.js, C++, UX (UCL Design Hackathon Winner – using Figma). DevOps, Git Bash, VSCode, Spyder.
+
+## Education
+
+- **Degree**, Mechanical Engineering MEng (1st class grade predicted & achieved across 1st and 2nd year), graduate in June 2026
+
 ## Projects
 
 ### 1: Comparing the Efficacy of 2 Machine Learning Stock Predictors
@@ -66,21 +74,6 @@ During my 2023 spring internship at Digital McKinsey, I met a consultant who wen
 
 Please note that I cannot share code since it is proprietary software owned by the startup Nix.
 [Live Demo](https://nix.tech/)
-
-
-
-
-## Skills
-
-- Skill 1
-- Skill 2
-- Skill 3
-- Skill 4
-
-## Education
-
-- **Degree**, Major, University, Year
-- **Certification**, Issuing Organization, Year
 
 ## Contact
 
