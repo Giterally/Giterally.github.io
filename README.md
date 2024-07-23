@@ -59,7 +59,7 @@ In the summer of 2024, I interned as a software engineer at UCL in the departmen
 ![Input](giterally_images/tacilia_input.jpeg)
 ![Login](giterally_images/tacilia_login.jpeg)
 
-For more details, please see my github repository:
+I have not yet been given permission to share the code, but it is current on this github repository:
 [View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
 
 ### 3: Development of Online, On-demand Digital Tools
