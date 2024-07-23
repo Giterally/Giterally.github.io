@@ -1,4 +1,4 @@
-## About Me
+## About
 
 ![Linkedin Headshot](giterally_images/Linkedin_headshot.jpeg)
 
