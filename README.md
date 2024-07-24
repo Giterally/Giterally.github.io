@@ -24,8 +24,10 @@ In my free time, I've completed Codecademy courses on data analysis with Pandas,
 
 **Description:**
 - Developing a stock predictor using Python, comparing the efficacy of the scikit-learn library’s Random Forest Generator to the use of PyTorch for stock price forecasting using a Recurrent Neural Network: LSTM (Long Short-Term Memory).
-- Executed quantitative methods such as rolling averages and threshold probabilities, evaluating output based on various error metrics as well as a trading simulator I built using C++.
+- The LSTM beat the RFG across all error metrics, and trading $10,000 over 300+ days it outperformed by approximately 3.81%.
+- Executed quantitative and statistical methods such as rolling averages (time-series momentum) and threshold probabilities, evaluating output based on various error metrics as well as a trading simulator I built using C++.
 - Planning integration of pre-trained LLMs from Hugging Face to make real-time predictions on price reactions to news feed.
+
 
 **Technologies used:**
 - Python: Numpy, Pandas, Scikit-Learn, Pytorch
