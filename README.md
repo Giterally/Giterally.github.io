@@ -1,6 +1,7 @@
 ## About
-![Linkedin Headshot](giterally_images/Linkedin_headshot.jpeg)
-
+<div style="text-align: center;">
+  <img src="giterally_images/Linkedin_headshot.jpeg" alt="Linkedin Headshot" />
+</div>
 
 
 I am a highly self-motivated Mechanical Engineering MEng student at University College London (26' grad), based in London, England. My interests span across finance, consulting, software engineering, data science, machine learning and AI. Please find below a couple of open-source projects I have worked on during various internships and personal endeavors.
