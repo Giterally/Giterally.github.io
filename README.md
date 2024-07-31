@@ -85,7 +85,7 @@ Please note that I cannot share code since it is proprietary software owned by t
 
 Here is a sample of some code I wrote
 
-'''
+```python
 
 # ----- GLOBAL STYLING ----- #
 
@@ -156,7 +156,7 @@ ui.run()
 
 
 # ----- SCRIPT ----- #
-'''
+```
 
 
 
