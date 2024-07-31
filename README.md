@@ -39,7 +39,10 @@ In the image below, some graphical outputs of the model are shown, which were ge
 
 
 ![Stock Predictor Output1](giterally_images/comparison_results.PNG)
-![Stock Predictor Output2](giterally_images/C++_results.PNG)
+<center>
+    ![Stock Predictor Output2](giterally_images/C++_results.PNG)
+</center>
+
 
 
 For more details, please see my github repository:
