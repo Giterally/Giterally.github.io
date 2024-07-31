@@ -59,8 +59,7 @@ In the summer of 2024, I interned as a software engineer at UCL in the departmen
 - JS, HTML, CSS
 - Page navigation, authentication, contact page etc.
 
-I built the website pages, shown in the images below, during my internship across 2 months and was offered an extension on my contract due to the work I produced but was unable to continue due to other commitments. I do not have access to the completed website but here is the website code I developed on this github repository:
-[View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
+I built the website pages, shown in the images below, during my internship across 2 months and was offered an extension on my contract due to the work I produced but was unable to continue due to other commitments. I do not have access to the completed website but here is the website code I developed on this github repository: [View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface) (note that the 'Input' page does not yet have functionality)
 
 ![Homepage](giterally_images/tacilia_homepage.jpeg)
 ![About](giterally_images/tacilia_about.jpeg)
