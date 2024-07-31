@@ -78,15 +78,12 @@ During my 2023 spring internship at Digital McKinsey, I met a consultant who wen
 - Next.js
 - Usage tracking & authentication
 
-Please note that I cannot share code since it is proprietary software owned by the startup Nix.
-[Live Website](https://nix.tech/)
+Please note that I cannot share code of tools which are on the website since it is proprietary software owned by the startup Nix. The website is currently still up and can be visited here: [Live Website](https://nix.tech/)
 
 
 
-Here is a sample of some code I wrote
-
+Here is a sample of some code I wrote for a directory-to-HTML converter which is not live on the website since we discovered this particular concept was incompatible with the framework we were using:
 ```python
-
 # ----- GLOBAL STYLING ----- #
 
 ui.button.default_classes("rounded-md bg-blue-grey-6 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-grey-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-grey-6 w-96")
@@ -153,16 +150,7 @@ ui.separator()
 
 ui.button("Generate HTML file", on_click=lambda: generate_html(directory))
 ui.run()
-
-
-# ----- SCRIPT ----- #
 ```
-
-
-
-
-
-
 
 ## Contact
 
