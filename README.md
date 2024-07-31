@@ -61,8 +61,98 @@ In the summer of 2024, I interned as a software engineer at UCL in the departmen
 ![Input](giterally_images/tacilia_input.jpeg)
 ![Login](giterally_images/tacilia_login.jpeg)
 
-I have not yet been given permission to share the code, but it is currently on this github repository:
+I have not yet been given permission to share the website code, but it is currently on this github repository:
 [View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
+
+I also developed this code which  uses the OpenAI DALL-E 3 Model API to generate an image which subsequently goes through a pixelation process which produces an image which can be interpreted by a mechanical device which projects a heating laser on a metal surface configured in such a way that a blind person can run their fingers over the surface to visualise the image.
+
+```python
+from openai import OpenAI
+import requests
+from PIL import Image
+from io import BytesIO
+import cv2
+import numpy as np
+
+# Set your OpenAI API key here
+api_key = '---------------------------------------------------------'
+
+# Initialize the OpenAI client
+client = OpenAI(api_key=api_key)
+
+# Define the prompt for the image generation
+prompt = 'a simple 2D cartoon image of a duck with a clear outline and no background'
+
+# Generate the image using the OpenAI client
+response = client.images.generate(
+    model="dall-e-3",
+    prompt=prompt,
+    size="1024x1024",
+    n=1,
+    quality="standard"
+)
+
+# Retrieve the generated image URL
+image_url = response.data[0].url
+print(f'Generated Image URL: {image_url}')
+
+# Download the image from the URL
+def download_image(url, save_path):
+    response = requests.get(url)
+    if response.status_code == 200:
+        image = Image.open(BytesIO(response.content))
+        image.save(save_path, 'PNG')
+        print(f"Image saved to {save_path}")
+    else:
+        print(f"Failed to retrieve image. HTTP Status code: {response.status_code}")
+
+save_path = "duck.png"  # Path to save the image
+download_image(image_url, save_path)
+
+# Pixelate the downloaded image
+def pixelate_image_with_spacing(original_image, grid_size, spacing):
+    height, width = original_image.shape[:2]
+    rows, cols = grid_size, grid_size
+    row_size = height // rows
+    col_size = width // cols
+
+    new_height = rows * (row_size + spacing) - spacing
+    new_width = cols * (col_size + spacing) - spacing
+    pixelated_image = np.ones((new_height, new_width, 3), dtype=np.uint8) * 255
+
+    for i in range(rows):
+        for j in range(cols):
+            start_row = i * row_size
+            start_col = j * col_size
+            center_pixel_color = original_image[start_row + row_size // 2, start_col + col_size // 2]
+            center_pixel_color = 0 if center_pixel_color < 100 else 255
+
+            new_start_row = i * (row_size + spacing)
+            new_start_col = j * (col_size + spacing)
+            pixelated_image[new_start_row:new_start_row + row_size, new_start_col:new_start_col + col_size] = center_pixel_color
+
+    return pixelated_image
+
+# Process the image: resize, convert to grayscale, pixelate
+def process_image(input_path, output_path, origin_size=(1280, 1280), grid_size=64, spacing=8):
+    original_image = cv2.imread(input_path)
+    original_image = cv2.resize(original_image, origin_size)
+    original_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2GRAY)
+
+    pixelated_image = pixelate_image_with_spacing(original_image, grid_size, spacing)
+    cv2.imwrite(output_path, pixelated_image)
+
+# Input and output file paths
+input_image = "duck.png"
+output_image = "pixelart_with_spacing.png"
+
+# Process the image and save the result
+process_image(input_image, output_image, origin_size=(1280, 1280), grid_size=128, spacing=8)
+print("Finished.")
+```
+Which produces the following images:
+![Duck](giterally_images/tacilia_duck.jpeg)
+![Duck Pixelated](giterally_images/tacilia_duck_pixelated.jpeg)
 
 ### 3: Development of Online, On-demand Digital Tools
 During my 2023 spring internship at Digital McKinsey, I met a consultant who went on to build a startup which would act an as online marketplace for digital tools, and I did some work for him in my second year at university, building digital tools alongside other programmers and using open-source code, as well as developing the website itself.
@@ -79,7 +169,6 @@ During my 2023 spring internship at Digital McKinsey, I met a consultant who wen
 - Usage tracking & authentication
 
 Please note that I cannot share code of tools which are on the website since it is proprietary software owned by the startup Nix. The website is currently still up and can be visited here: [Live Website](https://nix.tech/)
-
 
 
 Here is a sample of some code I wrote for a directory-to-HTML converter which is not live on the website since we discovered this particular concept was incompatible with the framework we were using:
