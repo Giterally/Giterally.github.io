@@ -59,6 +59,8 @@ In the summer of 2024, I interned as a software engineer at UCL in the departmen
 - JS, HTML, CSS
 - Page navigation, authentication, contact page etc.
 
+I built the website pages, shown in the images below, during my internship across 2 months and was offered an extension on my contract due to the work I produced but was unable to continue due to other commitments. I do not have access to the completed website but here is the website code I developed on this github repository:
+[View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
 
 ![Homepage](giterally_images/tacilia_homepage.jpeg)
 ![About](giterally_images/tacilia_about.jpeg)
@@ -66,12 +68,7 @@ In the summer of 2024, I interned as a software engineer at UCL in the departmen
 ![Input](giterally_images/tacilia_input.jpeg)
 ![Login](giterally_images/tacilia_login.jpeg)
 
-
-
-I have not yet been given permission to share the website code, but it is currently on this github repository:
-[View Project](https://github.com/Giterally/Tactile_Printing_Software_Interface)
-
-I also developed this code which  uses the OpenAI DALL-E 3 Model API to generate an image which subsequently goes through a pixelation process which produces an image which can be interpreted by a mechanical device which projects a heating laser on a metal surface configured in such a way that a blind person can run their fingers over the surface to visualise the image.
+I also developed this code which  uses the OpenAI DALL-E 3 Model API to generate an image which subsequently goes through a pixelation process to produce an second image that can be interpreted by a mechanical device which projects a heating laser on a metal surface to raise specific nodes configured in such a way that a blind person can run their fingers over the surface to visualise the image.
 
 ```python
 from openai import OpenAI
