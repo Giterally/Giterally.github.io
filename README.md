@@ -151,8 +151,8 @@ process_image(input_image, output_image, origin_size=(1280, 1280), grid_size=128
 print("Finished.")
 ```
 Which produces the following images:
-![Duck](giterally_images/tacilia_duck.jpeg)
-![Duck Pixelated](giterally_images/tacilia_duck_pixelated.jpeg)
+![Duck](giterally_images/tacilia_duck.png)
+![Duck Pixelated](giterally_images/tacilia_duck_pixelated.png)
 
 ### 3: Development of Online, On-demand Digital Tools
 During my 2023 spring internship at Digital McKinsey, I met a consultant who went on to build a startup which would act an as online marketplace for digital tools, and I did some work for him in my second year at university, building digital tools alongside other programmers and using open-source code, as well as developing the website itself.
