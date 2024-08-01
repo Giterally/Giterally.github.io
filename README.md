@@ -50,7 +50,7 @@ For more details, please see my github repository:
 [View Project](https://github.com/Giterally/ML_Stock_Predictor_NWC)
 
 ### 2: Building a Website for a UCL Professor Working in the Disability Space
-In the summer of 2024, I interned as a software engineer at UCL in the department Computer Science, building a website interface for a mechanical tool that helps visually-impaired users interpret images through a refreshable braille surface. 
+In the summer of 2024, I briefly interned as a software engineer at UCL in the department Computer Science, building a skeleton website interface for a mechanical tool that will help visually-impaired users interpret images through a refreshable braille surface. 
 
 **Description:**
 - Developing a website for the UCL Global Disability Innovation Hub to interface a device that produces a refreshable braille surface.
