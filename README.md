@@ -4,7 +4,7 @@
 </div>
 
 
-I am a highly self-motivated Mechanical Engineering MEng student at University College London (26' grad), based in London, England. My interests span across finance, consulting, software engineering, data science, machine learning and AI. Please find below a couple of open-source projects I have worked on during various internships and personal endeavors.
+I am a highly self-motivated Mechanical Engineering MEng student at University College London (26' grad), based in London, England. Please find below a couple of open-source projects I have worked on during various internships and personal endeavors.
 
 - 📧 chandernoah@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/noah-chander-014b52250/)
