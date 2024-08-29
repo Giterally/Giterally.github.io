@@ -42,6 +42,10 @@ Random Forest - Mean Absolute Error = 0.496, Root Mean Squared Error = 0.704, R-
 
 LSTM - Mean Absolute Error = 0.477, Root Mean Squared Error = 0.691, R-Squared Value = -0.913
 
+- LSTM outperforms the Random Forest model on all metrics: it has a lower MAE and RMSE, and a less negative R² value.
+- However, the negative R² values for both models suggest that there may be a fundamental issue with the model fitting, such as poor feature selection, model misspecification, or inappropriate data preprocessing.
+
+
 The two 'Predictions vs Actual' graphs below display the output of the model: a 1 or 0. A 1 is if the market is predicted to go up the next day and a 0 if the market is predicted to go down, since directional prediction is generally more useful in this context than absolute prediction. The final graph shows cumulative success rate over time, and at the bottom we have the results of the C++ trading simulator I built where Simulation 1 is for the LSTM and Simulation 2 for the RFG. Again, the LSTM outperforms.
 
 
