@@ -1,0 +1,68 @@
+:root {
+  /* Swiss-style neutral palette: lots of white space, high contrast text, single accent */
+  --bg: #ffffff;
+  --panel: #ffffff;
+  --text: #0b0b0b;
+  --muted: #5c6770;
+  --accent: #d62828; /* strong red accent (Swiss style) */
+  --border: #e6e9ec;
+  --glass: rgba(11,11,11,0.03);
+  --max-width: 1000px;
+}
+* { box-sizing: border-box; }
+.site-root * { box-sizing: border-box; }
+html,body { height:100%; margin:0; font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+.bg-grid { display:none; } /* remove decorative grid for Swiss cleanliness */
+.site-header { position:relative; z-index:2; display:flex; align-items:center; justify-content:space-between; padding:2rem 2.5rem; border-bottom:1px solid var(--border); background:transparent; }
+.brand { display:flex; gap:1rem; align-items:center; }
+.avatar { width:72px; height:72px; object-fit:cover; border-radius:6px; border:2px solid var(--border); box-shadow:none; }
+.brand h1 { margin:0; font-weight:700; color:var(--text); font-size:1.25rem; letter-spacing:0.02em; }
+.tagline { margin:0; color:var(--muted); font-size:0.95rem; }
+.main-nav { display:flex; gap:1rem; }
+.nav-button { background:transparent; color:var(--muted); border:1px solid transparent; padding:8px 12px; border-radius:4px; cursor:pointer; transition:color .12s, background .12s; font-weight:600; }
+.nav-button:hover { color:var(--text); background:var(--border); }
+.nav-button.active { color:var(--bg); background:var(--accent); border-radius:4px; padding:8px 14px; box-shadow:none; }
+.container { position:relative; z-index:2; max-width:var(--max-width); margin:3rem auto; padding:2rem; }
+h2 { margin-top:0; color:var(--text); font-weight:700; font-size:1.5rem; letter-spacing:0.02em; margin-bottom:0.5rem; }
+
+/* Page switching (show one page at a time) */
+.page { display:none; background:var(--panel); padding:1rem 0 0 0; border-radius:2px; margin-bottom:1.5rem; }
+.page.active { display:block; }
+
+.lead { font-size:1.05rem; color:var(--muted); margin-top:0.25rem; margin-bottom:1rem; }
+.split { display:flex; gap:2.5rem; align-items:flex-start; }
+.skill-list { padding-left:1rem; margin:0; color:var(--text); }
+.skill-list li { margin-bottom:0.4rem; }
+.code { background:#f7f7f7; padding:0.75rem; border:1px solid var(--border); border-radius:4px; color:#111; overflow:auto; font-family:monospace; font-size:0.9rem; }
+.readme img { max-width:320px; display:block; margin:0.6rem 0; border:1px solid var(--border); }
+
+# PDF embed styles
+.pdf-embed { margin-top:1rem; border:1px solid var(--border); padding:0.6rem; border-radius:6px; background:#fff; }
+.pdf-embed iframe { width:100%; height:640px; border:0; display:block; }
+.download-btn { display:inline-block; margin-top:0.6rem; padding:8px 12px; background:var(--accent); color:#fff; border-radius:4px; text-decoration:none; font-weight:600; }
+.download-btn:hover { opacity:0.95; }
+
+# Removed legacy project-list styles (kept below for small screens)
+h2 { margin-top:0; color:var(--text); font-weight:700; font-size:1.5rem; letter-spacing:0.02em; margin-bottom:0.5rem; }
+.tabs { display:flex; gap:2rem; align-items:flex-start; }
+.project-list { list-style:none; padding:0; margin:0; width:240px; }
+.project-item { padding:12px 14px; margin-bottom:10px; border-radius:2px; cursor:pointer; color:var(--text); background:transparent; border-bottom:1px solid var(--border); font-weight:600; text-transform:uppercase; font-size:0.9rem; letter-spacing:0.06em; }
+.project-item.active { color:var(--accent); background:transparent; border-bottom-color:var(--accent); }
+.project-content { flex:1; padding-left:2rem; }
+.project-panel { display:none; }
+.project-panel.active { display:block; }
+.images { display:flex; gap:1rem; margin-top:0.8rem; flex-wrap:wrap; }
+.images img { width:48%; border-radius:4px; border:1px solid var(--border); box-shadow:none; max-height:320px; object-fit:cover; }
+.site-footer { text-align:center; color:var(--muted); padding:1.25rem 0; opacity:0.95; margin-top:2rem; }
+a { color:var(--accent); text-decoration:none; font-weight:600; }
+a:hover { text-decoration:underline; }
+.project-list, .project-content { min-height:160px; }
+/* Responsive */
+@media (max-width:880px) {
+  .tabs { flex-direction:column; }
+  .project-list { width:100%; display:flex; overflow:auto; gap:0.5rem; }
+  .project-item { flex:1; white-space:nowrap; }
+  .images img { width:100%; }
+  .site-header { flex-direction:column; gap:0.75rem; align-items:flex-start; }
+}
+

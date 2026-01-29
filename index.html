@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Noah Chander — Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <header class="site-header">
+    <div class="brand">
+      <img class="avatar" src="giterally_images/Linkedin_headshot.jpeg" alt="Noah Chander">
+      <div>
+        <h1>Noah Chander</h1>
+        <p class="tagline">Mechanical Engineer • Software • ML • DevOps</p>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <button data-target="home" class="nav-button active">Home</button>
+      <button data-target="stock" class="nav-button">Stock Predictor</button>
+      <button data-target="tacilia" class="nav-button">UCL Website</button>
+      <button data-target="tools" class="nav-button">Digital Tools</button>
+      <button data-target="resume" class="nav-button">Resume</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Home: compact intro + skills -->
+    <section id="home" class="page active">
+      <h2>Noah Chander</h2>
+      <p class="lead">Mechanical Engineering MEng (UCL, grad 2026). Mechanical Engineer • Software • ML • DevOps</p>
+      <div class="split">
+        <div>
+          <h3>About</h3>
+          <p>I am a highly self-motivated Mechanical Engineering MEng student at University College London (grad 2026), based in London, England. Below are some open-source projects and work I've done.</p>
+          <p>Email: <a href="mailto:chandernoah@gmail.com">chandernoah@gmail.com</a> · <a href="https://www.linkedin.com/in/noah-chander-014b52250/" target="_blank">LinkedIn</a> · <a href="https://github.com/Giterally" target="_blank">GitHub</a></p>
+        </div>
+        <div>
+          <h3>Skills</h3>
+          <ul class="skill-list">
+            <li>SQL, Power BI, Excel</li>
+            <li>Python (NumPy, Pandas, PyTorch), Machine Learning</li>
+            <li>C++, MATLAB, JavaScript, HTML/CSS, React, Next.js</li>
+            <li>DevOps, Git</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stock Predictor project page -->
+    <section id="stock" class="page">
+      <h2>Comparing the Efficacy of 2 Machine Learning Stock Predictors</h2>
+      <p>Built and compared a Random Forest Generator and a PyTorch LSTM for directional stock prediction. The LSTM beat the RFG across error metrics and in a C++ trading simulator test.</p>
+      <div class="images">
+        <img src="giterally_images/comparison_results.PNG" alt="Stock Predictor Results">
+        <img src="giterally_images/C++_results.PNG" alt="C++ trading simulator">
+      </div>
+      <p><a href="https://github.com/Giterally/ML_Stock_Predictor_NWC" target="_blank">View Project on GitHub</a></p>
+    </section>
+
+    <!-- Tacilia project page -->
+    <section id="tacilia" class="page">
+      <h2>Website for a UCL Professor — Accessibility Project</h2>
+      <p>Internship work: Next.js frontend, authentication, contact page, image-to-braille tooling using DALL·E and pixelation scripts.</p>
+      <div class="images">
+        <img src="giterally_images/tacilia_homepage.jpeg" alt="Homepage">
+        <img src="giterally_images/tacilia_about.jpeg" alt="About">
+        <img src="giterally_images/tacilia_contact.jpeg" alt="Contact">
+      </div>
+      <p><a href="https://github.com/Giterally/Printing-Software-Website-Interface" target="_blank">View Project on GitHub</a></p>
+      <h3>Image pixelation script (excerpt)</h3>
+      <pre class="code">from openai import OpenAI
+import requests
+from PIL import Image
+from io import BytesIO
+import cv2
+import numpy as np
+# (script in README — full code in README.md)</pre>
+    </section>
+
+    <!-- Digital Tools project page -->
+    <section id="tools" class="page">
+      <h2>Development of Online, On-demand Digital Tools</h2>
+      <p>Built front-end tools with NiceGUI and Python; examples include a directory-to-HTML converter and other small utilities. Some work is proprietary and hosted on partner sites.</p>
+      <div class="images">
+        <img src="giterally_images/tacilia_duck.png" alt="Duck image">
+        <img src="giterally_images/tacilia_duck_pixelated.png" alt="Pixelated">
+      </div>
+      <p><a href="https://nix.tech/" target="_blank">Live Website (sample work)</a></p>
+    </section>
+
+    <!-- Resume page: only embedded resume and download -->
+    <section id="resume" class="page">
+      <h2>Resume</h2>
+      <div class="pdf-embed">
+        <iframe src="https://drive.google.com/file/d/1cm6HQis24UcyYQum8HY88964GLP5I6SI/preview" frameborder="0" allowfullscreen aria-label="Noah Chander resume"></iframe>
+        <p>
+          <a class="download-btn" href="https://drive.google.com/uc?export=download&id=1cm6HQis24UcyYQum8HY88964GLP5I6SI" target="_blank" rel="noopener">Download resume (PDF)</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- contact tab removed -->
+  </main>
+
+  <footer class="site-footer">
+    <small>© Noah Chander — Generated portfolio — theme: cyber/industrial</small>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
+
