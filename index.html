@@ -4,10 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Noah Chander — Portfolio</title>
-  <link rel="stylesheet" href="assets/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&family=Merriweather:wght@400;700&family=Roboto+Slab:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Share+Tech+Mono&family=Bangers&family=Abril+Fatface&family=Permanent+Marker&family=Lobster&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Load fonts first to avoid flash and ensure Orbitron is available -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Stylesheet with cache-bust param to avoid stale cached CSS on GitHub Pages -->
+  <link rel="stylesheet" href="assets/styles.css?v=2">
 </head>
 <body>
   <div class="bg-grid"></div>
@@ -17,6 +19,7 @@
       <button data-target="stock" class="nav-button">Stock Predictor</button>
       <button data-target="tacilia" class="nav-button">UCL Website</button>
       <button data-target="tools" class="nav-button">Digital Tools</button>
+      <button data-target="amazon" class="nav-button">Amazon SDE</button>
       <button data-target="resume" class="nav-button">Resume</button>
     </nav>
   </header>
@@ -89,6 +92,16 @@ import numpy as np
         <img src="giterally_images/tacilia_duck_pixelated.png" alt="Pixelated">
       </div>
       <p><a href="https://nix.tech/" target="_blank">Live Website (sample work)</a></p>
+    </section>
+
+    <!-- Amazon SDE Internship section -->
+    <section id="amazon" class="page">
+      <h2>Amazon SDE Internship</h2>
+      <p>Internship experience as a Software Development Engineer — worked on distributed systems and backend services (summary below).</p>
+      <div class="images">
+        <img src="giterally_images/prime_video.JPG" alt="Amazon SDE internship image">
+      </div>
+      <p><em>Highlights:</em> backend service design, performance tuning, and collaborating with cross-functional teams.</p>
     </section>
 
     <!-- Resume page: only embedded resume and download -->
