@@ -13,13 +13,13 @@
 </head>
 <body>
   <div class="bg-grid"></div>
-  <header class="site-header">
+    <header class="site-header">
     <nav class="main-nav">
       <button data-target="home" class="nav-button active">Home</button>
+      <button data-target="amazon" class="nav-button">Amazon SDE</button>
+      <button data-target="tools" class="nav-button">Digital Tools</button>
       <button data-target="stock" class="nav-button">Stock Predictor</button>
       <button data-target="tacilia" class="nav-button">UCL Website</button>
-      <button data-target="tools" class="nav-button">Digital Tools</button>
-      <button data-target="amazon" class="nav-button">Amazon SDE</button>
       <button data-target="resume" class="nav-button">Resume</button>
     </nav>
   </header>
@@ -32,7 +32,7 @@
           <span class="letter">N</span><span class="letter">o</span><span class="letter">a</span><span class="letter">h</span><span class="letter space">&nbsp;</span><span class="letter space">&nbsp;</span>
           <span class="letter">C</span><span class="letter">h</span><span class="letter">A</span><span class="letter">n</span><span class="letter">d</span><span class="letter">e</span><span class="letter">R</span>
         </div>
-        <div class="hero-subtitle">A portfolio of a subset of things I've worked on</div>
+        <div class="hero-subtitle">A portfolio of some things I've worked on</div>
       </div>
     </section>
 
@@ -52,57 +52,301 @@
       </div>
     </section>
 
+    <!-- Amazon SDE Internship section -->
+    <section id="amazon" class="page">
+      <h2>Amazon SDE Internship — Prime Video (return offer)</h2>
+      <div class="images">
+        <img class="amazon-img" src="giterally_images/prime_video.JPG" alt="Amazon SDE internship image">
+      </div>
+      <p class="amazon-caption">Highlighted in the above image shows my project, with realtime, debounced fetching of title cards for movies, tv shows, live sports and more. The old experience exclusively contained worded search suggestions which meant:</p>
+      <ul>
+        <li>showing results of things we didn't have</li>
+        <li>requiring a full page reload to navigate to the selected content item</li>
+      </ul>
+      <h3>Summary</h3>
+      <ul>
+        <li>Improved Prime Video's search experience for millions of customers with content card suggestions including artwork, movie metadata, titles, release years, live sports badges etc to be presented in real time alongside worded suggestions.</li>
+        <li>Built a highly scalable, low latency solution involving parallel API calls with progressive loading, debouncing strategies, and eliminating head-of-line blocking through asynchronous title card rendering.</li>
+        <li>Coordinated with UX Designers and Product to implement a responsive design compatible across the retail site amazon.com (US, DE, UK, JP), primevideo.com (rest of world), the MShop phone App, the PV Windows App and all viewports including mobile, tablet, desktop.</li>
+        <li>Owned the customer experience improvements for smoothness and keyboard navigation after completing my project early.</li>
+      </ul>
+      <p>I finished the project one month early and used the extra time to propose and fix a number of additional issues across the search experience, including:</p>
+      <ul>
+        <li>fixing infinite tab-cycling in the search dropdown</li>
+        <li>resolving a bug where the suggestions dropdown would disappear upon clicking a suggestion (which removed the 'instant' feel from search)</li>
+      </ul>
+      <p><em>Highlights:</em> backend service design, performance tuning, and collaborating with cross-functional teams.</p>
+    </section>
+
+    <!-- Digital Tools project page -->
+    <section id="tools" class="page">
+      <h2>Development of Online, On-demand Digital Tools</h2>
+      <p>During my 2023 spring internship at Digital McKinsey, I met a consultant who went on to build a startup which would act an as online marketplace for digital tools, and I did some work for him in my second year at university, building digital tools alongside other programmers and using open-source code, as well as developing the website itself.</p>
+
+      <h3>Description</h3>
+      <p>Developed front-end (using NiceGUI) & adapted back-end Python code to convert open-source code into web applications. Collaborated and shared code within a team of 4 software developers on GitHub, following a documented framework to create tools. Produced a range of digital tools such as a QR-code generator and a directory-to-html converter. Augmented understanding of public software systems and services such as ArcGIS and IndexNow.</p>
+
+      <h3>Technologies used</h3>
+      <ul>
+        <li>Python: object oriented programming for tool-building and Nicegui for frontend</li>
+        <li>Next.js</li>
+        <li>Usage tracking &amp; authentication</li>
+      </ul>
+
+      <p>Please note that I cannot share code of tools which are on the website since it is proprietary software owned by the startup Nix. The website is currently still up and can be visited here: <a href="https://nix.tech/" target="_blank">Live Website</a></p>
+
+      <h3>Sample code — directory-to-HTML converter (excerpt)</h3>
+      <pre class="code"># Sample code excerpt (see repo for full)</pre>
+    </section>
+
     <!-- Stock Predictor project page -->
     <section id="stock" class="page">
       <h2>Comparing the Efficacy of 2 Machine Learning Stock Predictors</h2>
-      <p>Built and compared a Random Forest Generator and a PyTorch LSTM for directional stock prediction. The LSTM beat the RFG across error metrics and in a C++ trading simulator test.</p>
+      <p>In my free time, I've completed Codecademy courses on data analysis with Pandas, analysing financial data with Python and Machine Learning with Python, as well as some stuff with C++, and hence wanted to put my skills to use.</p>
+
+      <h3>Description</h3>
+      <p>
+        Developing a stock predictor using Python, comparing the efficacy of the scikit-learn library’s Random Forest Generator to the use of PyTorch for stock price forecasting using a Recurrent Neural Network: LSTM (Long Short-Term Memory).
+        The LSTM beat the RFG across all error metrics, and trading $10,000 over 300+ days it outperformed by approximately 3.81%.
+      </p>
+      <p>
+        Executed quantitative and statistical methods such as rolling averages (time-series momentum) and threshold probabilities, evaluating output based on various error metrics as well as a trading simulator I built using C++.
+        Planning integration of pre-trained LLMs from Hugging Face to make real-time predictions on price reactions to news feed.
+      </p>
+
+      <h3>Technologies used</h3>
+      <ul>
+        <li>Python: Numpy, Pandas, Scikit-Learn, Pytorch</li>
+        <li>C++</li>
+      </ul>
+
+      <p>In the images below, some graphical outputs of the model are shown, which were generated by various files on the github repository: <a href="https://github.com/Giterally/ML_Stock_Predictor_NWC" target="_blank">View Project</a>. First, the two models are evaluated based on Mean Absolute Error, Root Mean Squared Error and R-Squared Value, and it can be seen that the LSTM model using Pytorch produces lower error than the Random Forest Generator using Scikit-Learn across all 3 metrics:</p>
+
+      <pre style="background:transparent;border:none;color:var(--muted);">
+Random Forest - Mean Absolute Error = 0.496, Root Mean Squared Error = 0.704, R-Squared Value = -0.990
+
+LSTM - Mean Absolute Error = 0.477, Root Mean Squared Error = 0.691, R-Squared Value = -0.913
+      </pre>
+
+      <p>LSTM outperforms the Random Forest model on all metrics: it has a lower MAE and RMSE, and a less negative R² value. However, the negative R² values for both models suggest that there may be an issue with the model fitting to be improved.</p>
+
+      <p>The two 'Predictions vs Actual' graphs below display the output of the model: a 1 or 0. A 1 is if the market is predicted to go up the next day and a 0 if the market is predicted to go down, since directional prediction is generally more useful in this context than absolute prediction. The final graph shows cumulative success rate over time, and at the bottom we have the results of the C++ trading simulator I built where Simulation 1 is for the LSTM and Simulation 2 for the RFG. Again, the LSTM outperforms.</p>
+
       <div class="images">
         <img src="giterally_images/comparison_results.PNG" alt="Stock Predictor Results">
-        <img src="giterally_images/C++_results.PNG" alt="C++ trading simulator">
+        <img class="zoom-out" src="giterally_images/C++_results.PNG" alt="C++ trading simulator">
       </div>
-      <p><a href="https://github.com/Giterally/ML_Stock_Predictor_NWC" target="_blank">View Project on GitHub</a></p>
     </section>
 
     <!-- Tacilia project page -->
     <section id="tacilia" class="page">
       <h2>Website for a UCL Professor — Accessibility Project</h2>
-      <p>Internship work: Next.js frontend, authentication, contact page, image-to-braille tooling using DALL·E and pixelation scripts.</p>
+      <p>In the summer of 2024, I interned for 1 month as a software engineer at UCL in the department Computer Science, building a skeleton website interface for a mechanical tool that will help visually-impaired users interpret images through a refreshable braille surface.</p>
+
+      <h3>Description</h3>
+      <p>
+        Developing a website for the UCL Global Disability Innovation Hub to interface a device that produces a refreshable braille surface.
+        Employed Next.js (JS/HTML/CSS) for website GUI, with open-source GitHub code and an OpenAI API for image conversion.
+        Carried out live trials and testing with potential users and pitching to potential investors to iterate a Figma UX design for the website.
+        Implemented a contact page, user authentication and live notifications, alongside worker threads to handle concurrent API requests.
+      </p>
+
+      <h3>Technologies used</h3>
+      <ul>
+        <li>Next.js, React</li>
+        <li>JS, HTML, CSS</li>
+        <li>Page navigation, authentication, contact page etc.</li>
+      </ul>
+
+      <p>I built the website pages, shown in the images below, during my internship and was offered an extension on my contract due to the work I produced but was unable to continue due to other commitments. I do not have access to the completed website but here is the website code I developed on this github repository: <a href="https://github.com/Giterally/Printing-Software-Website-Interface" target="_blank">View Project</a> (note that the 'Input' page does not yet have functionality)</p>
+
       <div class="images">
         <img src="giterally_images/tacilia_homepage.jpeg" alt="Homepage">
         <img src="giterally_images/tacilia_about.jpeg" alt="About">
         <img src="giterally_images/tacilia_contact.jpeg" alt="Contact">
+        <img src="giterally_images/tacilia_input.jpeg" alt="Input">
+        <img src="giterally_images/tacilia_login.jpeg" alt="Login">
       </div>
-      <p><a href="https://github.com/Giterally/Printing-Software-Website-Interface" target="_blank">View Project on GitHub</a></p>
-      <h3>Image pixelation script (excerpt)</h3>
+
+      <h3>Image generation & pixelation (excerpt)</h3>
+      <p>I also developed this code which uses the OpenAI DALL·E 3 Model API to generate an image which subsequently goes through a pixelation process to produce an second image that can be interpreted by a mechanical device which projects a heating laser on a metal surface to raise specific nodes configured in such a way that a blind person can run their fingers over the surface to visualise the image.</p>
+
       <pre class="code">from openai import OpenAI
 import requests
 from PIL import Image
 from io import BytesIO
 import cv2
 import numpy as np
-# (script in README — full code in README.md)</pre>
+
+# Set your OpenAI API key here
+api_key = '---------------------------------------------------------'
+
+# Initialize the OpenAI client
+client = OpenAI(api_key=api_key)
+
+# Define the prompt for the image generation
+prompt = 'a simple 2D cartoon image of a duck with a clear outline and no background'
+
+# Generate the image using the OpenAI client
+response = client.images.generate(
+    model="dall-e-3",
+    prompt=prompt,
+    size="1024x1024",
+    n=1,
+    quality="standard"
+)
+
+# Retrieve the generated image URL
+image_url = response.data[0].url
+print(f'Generated Image URL: {image_url}')
+
+# Download the image from the URL
+def download_image(url, save_path):
+    response = requests.get(url)
+    if response.status_code == 200:
+        image = Image.open(BytesIO(response.content))
+        image.save(save_path, 'PNG')
+        print(f"Image saved to {save_path}")
+    else:
+        print(f"Failed to retrieve image. HTTP Status code: {response.status_code}")
+
+save_path = "duck.png"  # Path to save the image
+download_image(image_url, save_path)
+
+# Pixelate the downloaded image
+def pixelate_image_with_spacing(original_image, grid_size, spacing):
+    height, width = original_image.shape[:2]
+    rows, cols = grid_size, grid_size
+    row_size = height // rows
+    col_size = width // cols
+
+    new_height = rows * (row_size + spacing) - spacing
+    new_width = cols * (col_size + spacing) - spacing
+    pixelated_image = np.ones((new_height, new_width, 3), dtype=np.uint8) * 255
+
+    for i in range(rows):
+        for j in range(cols):
+            start_row = i * row_size
+            start_col = j * col_size
+            center_pixel_color = original_image[start_row + row_size // 2, start_col + col_size // 2]
+            center_pixel_color = 0 if center_pixel_color < 100 else 255
+
+            new_start_row = i * (row_size + spacing)
+            new_start_col = j * (col_size + spacing)
+            pixelated_image[new_start_row:new_start_row + row_size, new_start_col:new_start_col + col_size] = center_pixel_color
+
+    return pixelated_image
+
+# Process the image: resize, convert to grayscale, pixelate
+def process_image(input_path, output_path, origin_size=(1280, 1280), grid_size=64, spacing=8):
+    original_image = cv2.imread(input_path)
+    original_image = cv2.resize(original_image, origin_size)
+    original_image = cv2.cvtColor(original_image, cv2.COLOR_BGR2GRAY)
+
+    pixelated_image = pixelate_image_with_spacing(original_image, grid_size, spacing)
+    cv2.imwrite(output_path, pixelated_image)
+
+# Input and output file paths
+input_image = "duck.png"
+output_image = "pixelart_with_spacing.png"
+
+# Process the image and save the result
+process_image(input_image, output_image, origin_size=(1280, 1280), grid_size=128, spacing=8)
+print("Finished.")</pre>
+
     </section>
 
     <!-- Digital Tools project page -->
     <section id="tools" class="page">
       <h2>Development of Online, On-demand Digital Tools</h2>
-      <p>Built front-end tools with NiceGUI and Python; examples include a directory-to-HTML converter and other small utilities. Some work is proprietary and hosted on partner sites.</p>
+      <p>During my 2023 spring internship at Digital McKinsey, I met a consultant who went on to build a startup which would act an as online marketplace for digital tools, and I did some work for him in my second year at university, building digital tools alongside other programmers and using open-source code, as well as developing the website itself.</p>
+
+      <h3>Description</h3>
+      <p>Developed front-end (using NiceGUI) & adapted back-end Python code to convert open-source code into web applications. Collaborated and shared code within a team of 4 software developers on GitHub, following a documented framework to create tools. Produced a range of digital tools such as a QR-code generator and a directory-to-html converter. Augmented understanding of public software systems and services such as ArcGIS and IndexNow.</p>
+
+      <h3>Technologies used</h3>
+      <ul>
+        <li>Python: object oriented programming for tool-building and Nicegui for frontend</li>
+        <li>Next.js</li>
+        <li>Usage tracking &amp; authentication</li>
+      </ul>
+
+      <p>Please note that I cannot share code of tools which are on the website since it is proprietary software owned by the startup Nix. The website is currently still up and can be visited here: <a href="https://nix.tech/" target="_blank">Live Website</a></p>
+
+      <h3>Sample code — directory-to-HTML converter (excerpt)</h3>
+      <pre class="code"># ----- GLOBAL STYLING ----- #
+
+ui.button.default_classes("rounded-md bg-blue-grey-6 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-blue-grey-5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-grey-6 w-96")
+ui.textarea.default_classes("block rounded-md border-none py-1.5 text-blue-grey-9 shadow-sm placeholder:text-blue-grey-4 focus:ring-2 focus:ring-inset focus:ring-blue-grey-6 sm:text-sm sm:leading-6 w-96")
+ui.input.default_classes("block rounded-md border-0 py-1.5 text-blue-grey-9 shadow-sm placeholder:text-blue-grey-4 focus:ring-2 focus:ring-inset focus:ring-blue-grey-6 sm:text-sm sm:leading-6 w-96")
+ui.number.default_classes("block rounded-md border-0 py-1.5 text-blue-grey-9 shadow-sm placeholder:text-blue-grey-4 focus:ring-2 focus:ring-inset focus:ring-blue-grey-6 sm:text-sm sm:leading-6 w-96")
+ui.label.default_classes("max-w-xl text-base leading-7 text-blue-grey-7 lg:max-w-lg w-96")
+ui.image.default_classes("max-w-xl text-base leading-7 text-blue-grey-7 lg:max-w-lg w-96")
+ui.html.default_classes("max-w-xl text-base leading-7 text-blue-grey-7 lg:max-w-lg w-96")
+ui.markdown.default_classes("max-w-xl text-base leading-7 text-blue-grey-7 lg:max-w-lg w-96")
+ui.select.default_classes("mt-2 block rounded-md border-0 py-1.5 pl-3 pr-10 text-blue-grey-9 focus:ring-2 focus:ring-blue-grey-6 sm:text-sm sm:leading-6 w-96")
+ui.switch.default_classes("relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-grey-6 focus:ring-offset-2 w-96")
+ui.upload.default_classes("mt-2 block rounded-md border-0 py-1.5 text-blue-grey-9 shadow-sm focus:ring-2 focus:ring-inset focus:ring-blue-grey-6 sm:text-sm sm:leading-6 w-96").default_props("color=blue-grey")
+        
+# ----- USER INTERFACE ----- #
+
+@ui.page("/") # uid must be passed as a query parameter
+
+def main(request: Request, uid: str):
+    tag_run(request, uid)
+
+
+
+def generate_html(directory):
+        if directory:
+            html_path = ""
+            file_list = os.listdir(directory)
+            html_list = ["<html><head><title>"+os.path.basename(directory)+" - created with Oli's Image Script!</title></head>\\n"]
+            html_list.append("<body>\\n")
+            for x in file_list:
+                if os.path.isdir(os.path.join(directory, x)):
+                    sub_file_list = os.listdir(os.path.join(directory, x))
+                    for y in sub_file_list:
+                        if (".jpg") in y:
+                            if " " in y:
+                                os.rename(os.path.join(directory, x, y), os.path.join(directory, x, y.replace(" ", "_")))
+                                y = y.replace(" ", "_")
+                            html_list.append("<img src=file:///" + os.path.join(directory, x, y) + ">" + x + "<br>\\n")
+            html_list.append("</body></html>")
+
+            html_filename = os.path.basename(directory) + ".htm"
+            html_path = os.path.join(directory, html_filename)
+
+            html_file = open(os.path.join(directory, os.path.basename(directory) + ".htm"), "w")
+            html_file.writelines(html_list)
+            html_file.close()
+
+            ui.label("HTML file generated at", html_path)
+            
+            # Allow user to export the data
+
+            with ui.row():
+                ui.button("Download HTML file",
+                        on_click=lambda: ui.download(html_file, filename=html_filename)
+                        )
+
+# Create UI
+    
+ui.label("Upload directory to be converted to HTML.")
+directory = ui.upload(label='Select Directory')
+
+ui.separator()
+
+ui.button("Generate HTML file", on_click=lambda: generate_html(directory))
+ui.run()</pre>
+
       <div class="images">
         <img src="giterally_images/tacilia_duck.png" alt="Duck image">
         <img src="giterally_images/tacilia_duck_pixelated.png" alt="Pixelated">
       </div>
-      <p><a href="https://nix.tech/" target="_blank">Live Website (sample work)</a></p>
     </section>
 
-    <!-- Amazon SDE Internship section -->
-    <section id="amazon" class="page">
-      <h2>Amazon SDE Internship</h2>
-      <p>Internship experience as a Software Development Engineer — worked on distributed systems and backend services (summary below).</p>
-      <div class="images">
-        <img src="giterally_images/prime_video.JPG" alt="Amazon SDE internship image">
-      </div>
-      <p><em>Highlights:</em> backend service design, performance tuning, and collaborating with cross-functional teams.</p>
-    </section>
+    
 
     <!-- Resume page: only embedded resume and download -->
     <section id="resume" class="page">
