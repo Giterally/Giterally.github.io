@@ -12,7 +12,12 @@
 * { box-sizing: border-box; }
 .site-root * { box-sizing: border-box; }
 .site-root * { box-sizing: border-box; }
+.site-root * { box-sizing: border-box; }
 html,body { height:100%; margin:0; font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:var(--text); -webkit-font-smoothing:antialiased; }
+/* ensure no inner border */
+body { box-shadow: none !important; }
+/* thick inner border around viewport */
+body { box-shadow: inset 0 0 0 6px rgba(255,255,255,0.08); }
 .bg-grid { display:none; } /* remove decorative grid for Swiss cleanliness */
 .site-header { position:fixed; top:0; left:0; right:0; z-index:999; display:flex; align-items:center; justify-content:space-between; padding:0.25rem 1rem; height:56px; border-bottom:1px solid rgba(255,255,255,0.04); background: rgba(4,10,18,0.55); backdrop-filter: blur(6px); }
 .brand { display:flex; gap:1rem; align-items:center; }
@@ -28,7 +33,7 @@ h2 { margin-top:0; color:var(--text); font-weight:700; font-size:1.5rem; letter-
 
 /* Page switching (show one page at a time) */
 .page { display:block; background:transparent; padding:2.5rem 0 3.5rem 0; border-radius:2px; margin-bottom:3.5rem; transition: background-color .18s ease; }
-.page.in-view { background: rgba(255,255,255,0.03); }
+.page.in-view { background: transparent; }
 
 .lead { font-size:1.05rem; color:var(--muted); margin-top:0.25rem; margin-bottom:1rem; font-family: "Inter", sans-serif; text-align:center; }
 .split { display:flex; gap:2.5rem; align-items:flex-start; }
@@ -43,28 +48,44 @@ h2 { margin-top:0; color:var(--text); font-weight:700; font-size:1.5rem; letter-
 .download-btn { display:inline-block; margin-top:0.6rem; padding:8px 12px; background:var(--accent); color:var(--bg); border-radius:4px; text-decoration:none; font-weight:600; }
 .download-btn:hover { opacity:0.95; }
 
-/* Big name styles - each letter uses a different font */
-#big-name { text-align:center; margin:1rem 0 1.25rem; white-space:nowrap; }
+/* Big name styles - full-bleed, no bounds */
+#big-name {
+  /* make the name stretch full-viewport width (full-bleed) */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  width: 100vw;
+  text-align: center;
+  white-space: nowrap;
+  padding: 0.5rem 0;
+}
 #big-name .letter { display:inline-block; padding:0 2px; color:var(--accent); font-weight:800; line-height:1; vertical-align:middle; }
-#big-name .space { width:0.6em; display:inline-block; }
-#big-name { font-size: clamp(48px, 8vw, 96px); letter-spacing:0.02em; }
+#big-name .space { width:0.35em; display:inline-block; }
+#big-name { font-size: clamp(48px, 12vw, 160px); line-height:0.9; letter-spacing:0.02em; }
 
 /* assign outlandish, very different fonts to each letter */
 #big-name .letter:nth-child(1) { font-family: "Bangers", cursive; transform: translateY(-6px) rotate(-2deg); font-size:1.05em; text-shadow:0 2px 0 rgba(0,0,0,0.12);}
 #big-name .letter:nth-child(2) { font-family: "Abril Fatface", serif; transform: translateY(4px); font-weight:700; font-size:1.15em; letter-spacing:0.02em; }
-#big-name .letter:nth-child(3) { font-family: "Permanent Marker", cursive; transform: rotate(-4deg); font-size:1.02em; }
+#big-name .letter:nth-child(3) { font-family: "Playfair Display", "Permanent Marker", serif; transform: rotate(-4deg); font-weight:700; font-size:1.02em; }
 #big-name .letter:nth-child(4) { font-family: "Lobster", cursive; transform: translateY(-4px) scale(1.12); font-style:normal; }
 #big-name .letter:nth-child(5) { /* space */ font-family: "Inter", sans-serif; }
 #big-name .letter:nth-child(6) { font-family: "Oswald", sans-serif; letter-spacing:0.04em; font-variant:small-caps; font-weight:700; font-size:0.95em; }
 #big-name .letter:nth-child(7) { font-family: "Playfair Display", serif; font-style:italic; font-weight:700; font-size:1.02em; letter-spacing:-0.01em; }
 #big-name .letter:nth-child(8) { font-family: "Poppins", sans-serif; font-weight:600; text-transform:uppercase; font-size:0.95em; }
-#big-name .letter:nth-child(9) { font-family: "Merriweather", serif; font-weight:400; letter-spacing:0.04em; font-size:0.96em; }
+#big-name .letter:nth-child(9) { font-family: "Vanity Fair Conde Nast Font", "Merriweather", serif; font-weight:400; letter-spacing:0.04em; font-size:0.96em; }
 #big-name .letter:nth-child(10) { font-family: "Roboto Slab", serif; font-weight:700; transform: translateY(2px); font-size:0.98em; }
 #big-name .letter:nth-child(11) { font-family: "Montserrat", sans-serif; font-weight:300; font-size:0.92em; letter-spacing:0.06em; }
 #big-name .letter:nth-child(12) { font-family: "Raleway", sans-serif; font-weight:800; text-transform:uppercase; font-size:0.98em; }
 #big-name .letter:nth-child(13) { font-family: "Share Tech Mono", monospace; transform: translateY(1px); font-weight:600; font-style:italic; letter-spacing:0.02em; }
 
-.home-subcontent { margin-top:1.25rem; font-family: "Inter", sans-serif; color:var(--muted); }
+.home-subcontent { margin-top:10rem; font-family: "Inter", sans-serif; color:var(--muted); }
+.home-about { text-align:center; max-width:820px; margin:0 auto 1.6rem; color:var(--muted); }
+.home-about .about-text { color:var(--text); font-size:1.02rem; margin-bottom:0.5rem; }
+.home-about .contact { color:var(--muted); margin-top:0.25rem; }
+.skills-block { max-width:820px; margin:0 auto; }
+.skills-block h3 { color:var(--text); margin-bottom:0.6rem; text-align:left; }
 .page { scroll-margin-top: 92px; }
 
 /* make nav-button hover style match section in-view bg (subtle) */

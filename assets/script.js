@@ -52,5 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
     s.style.scrollMarginTop = (document.querySelector(".site-header").offsetHeight + 8) + "px";
     observer.observe(s);
   });
+  
 });
 
