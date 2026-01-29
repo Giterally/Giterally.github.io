@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="assets/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&family=Merriweather:wght@400;700&family=Roboto+Slab:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Share+Tech+Mono&family=Bangers&family=Abril+Fatface&family=Permanent+Marker&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&family=Merriweather:wght@400;700&family=Roboto+Slab:wght@400;700&family=Montserrat:wght@400;700&family=Raleway:wght@400;700&family=Share+Tech+Mono&family=Bangers&family=Abril+Fatface&family=Permanent+Marker&family=Lobster&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="bg-grid"></div>
@@ -24,26 +24,27 @@
   <main class="container">
     <!-- Home: compact intro + skills -->
     <section id="home" class="page active">
+      <div class="hero-inner">
+        <div id="big-name" aria-hidden="false" role="heading" aria-level="1">
+          <span class="letter">N</span><span class="letter">o</span><span class="letter">a</span><span class="letter">h</span><span class="letter space">&nbsp;</span><span class="letter space">&nbsp;</span>
+          <span class="letter">C</span><span class="letter">h</span><span class="letter">A</span><span class="letter">n</span><span class="letter">d</span><span class="letter">e</span><span class="letter">R</span>
+        </div>
+        <div class="hero-subtitle">A portfolio of a subset of things I've worked on</div>
+      </div>
+    </section>
 
-      <div id="big-name" aria-hidden="false" role="heading" aria-level="1">
-        <span class="letter">N</span><span class="letter">o</span><span class="letter">a</span><span class="letter">h</span><span class="letter space">&nbsp;</span><span class="letter space">&nbsp;</span>
-        <span class="letter">C</span><span class="letter">h</span><span class="letter">A</span><span class="letter">n</span><span class="letter">d</span><span class="letter">e</span><span class="letter">R</span>
+    <!-- Home content revealed after scrolling -->
+    <section id="home-content" class="page">
+      <div class="home-about">
+        <p class="about-text">Based London, UK | UCL BEng Mechanical Engineering, 1:1, 2025 | Worked in software engineering, quantitative research &amp; finance</p>
+        <p class="contact">Email: <a href="mailto:chandernoah@gmail.com">chandernoah@gmail.com</a> · <a href="https://www.linkedin.com/in/noah-chander-014b52250/" target="_blank">LinkedIn</a> · <a href="https://github.com/Giterally" target="_blank">GitHub</a></p>
       </div>
 
-      <div class="home-subcontent">
-        <div class="home-about">
-          <p class="about-text">I'm based in London, UK and graduated from UCL (BEng Mechanical Engineering, 1:1, 2025). Experienced software developer and quantitative researcher.</p>
-          <p class="contact">Email: <a href="mailto:chandernoah@gmail.com">chandernoah@gmail.com</a> · <a href="https://www.linkedin.com/in/noah-chander-014b52250/" target="_blank">LinkedIn</a> · <a href="https://github.com/Giterally" target="_blank">GitHub</a></p>
-        </div>
-
-        <div class="skills-block">
-          <h3>Skills</h3>
-          <ul class="skill-list">
-            <li>SQL, Power BI, Excel</li>
-            <li>Python (NumPy, Pandas, PyTorch), Machine Learning</li>
-            <li>C++, MATLAB, JavaScript, HTML/CSS, React, Next.js</li>
-            <li>DevOps, Git</li>
-          </ul>
+      <div class="skills-block">
+        <div class="skills-list">
+          <p class="skills-item"><strong>LANGUAGES:</strong> Python, C++, Java (OOP) / Scala (functional), Typescript/JavaScript, MATLAB (VS Code, Spyder, IntelliJ editors)</p>
+          <p class="skills-item"><strong>TECH:</strong> Python Pandas, NiceGUI, PyTorch, Scikit-Learn, Andrew Ng’s Machine Learning Specialisation, React/Next.js, SQL, Excel</p>
+          <p class="skills-item"><strong>SYSTEMS:</strong> Experience with Unix/Linux dev., distributed system design, and asynchronous API communication for network latency.</p>
         </div>
       </div>
     </section>
@@ -107,6 +108,17 @@ import numpy as np
   <footer class="site-footer"></footer>
 
   <script src="assets/script.js"></script>
+  <a id="contact-btn" href="#" aria-label="Contact Noah" title="Contact Noah" role="button">Contact</a>
+
+  <!-- Contact popover (hidden by default) -->
+  <div id="contact-panel" role="dialog" aria-hidden="true" aria-labelledby="contact-btn">
+    <div class="contact-inner">
+      <p class="contact-line"><a href="mailto:chandernoah@gmail.com">chandernoah@gmail.com</a></p>
+      <p class="contact-line"><a href="https://www.linkedin.com/in/noah-chander-014b52250/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="contact-line"><a href="https://github.com/Giterally" target="_blank" rel="noopener">GitHub</a></p>
+    </div>
+    <button id="contact-close" aria-label="Close contact" title="Close">×</button>
+  </div>
 </body>
 </html>
 

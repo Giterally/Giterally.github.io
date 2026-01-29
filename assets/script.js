@@ -53,5 +53,49 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(s);
   });
   
+  // Darken background when home-content scrolls into view
+  const homeContent = document.getElementById("home-content");
+  if (homeContent) {
+    const bgObserver = new IntersectionObserver((entries) => {
+      entries.forEach(en => {
+        if (en.isIntersecting) {
+          document.body.classList.add("content-visible");
+        } else {
+          document.body.classList.remove("content-visible");
+        }
+      });
+    }, { threshold: 0.15 });
+    bgObserver.observe(homeContent);
+  }
+
+  // Contact popover behavior
+  const contactBtn = document.getElementById("contact-btn");
+  const contactPanel = document.getElementById("contact-panel");
+  const contactClose = document.getElementById("contact-close");
+  if (contactBtn && contactPanel) {
+    function openContact() {
+      contactPanel.classList.add("open");
+      contactPanel.setAttribute("aria-hidden", "false");
+    }
+    function closeContact() {
+      contactPanel.classList.remove("open");
+      contactPanel.setAttribute("aria-hidden", "true");
+    }
+    contactBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (contactPanel.classList.contains("open")) closeContact(); else openContact();
+    });
+    // close when clicking outside
+    document.addEventListener("click", (e) => {
+      if (!contactPanel.contains(e.target) && !contactBtn.contains(e.target)) {
+        closeContact();
+      }
+    });
+    // close on Escape
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeContact();
+    });
+    if (contactClose) contactClose.addEventListener("click", closeContact);
+  }
 });
 
