@@ -83,7 +83,7 @@ body.content-visible {
 #big-name .letter:nth-child(1) { font-family: "Bangers", cursive; transform: translateY(-6px) rotate(-2deg); font-size:1.05em; text-shadow:0 2px 0 rgba(0,0,0,0.12);}
 #big-name .letter:nth-child(2) { font-family: "Abril Fatface", serif; transform: translateY(4px); font-weight:700; font-size:1.15em; letter-spacing:0.02em; }
 #big-name .letter:nth-child(3) { font-family: "Playfair Display", "Permanent Marker", serif; transform: rotate(-4deg); font-weight:700; font-size:1.02em; }
-#big-name .letter:nth-child(4) { font-family: "Permanent Marker", cursive; transform: translateY(-2px) rotate(2deg); font-weight:700; font-size:1.06em; }
+#big-name .letter:nth-child(4) { font-family: "Lobster", cursive; transform: translateY(-4px) scale(1.12); font-style:normal; font-weight:700; font-size:1.08em; }
 #big-name .letter:nth-child(5) { /* space */ font-family: "Inter", sans-serif; }
 #big-name .letter:nth-child(6) { font-family: "Oswald", sans-serif; letter-spacing:0.04em; font-variant:small-caps; font-weight:700; font-size:0.95em; }
 #big-name .letter:nth-child(7) { font-family: "Playfair Display", serif; font-style:italic; font-weight:700; font-size:1.02em; letter-spacing:-0.01em; }
