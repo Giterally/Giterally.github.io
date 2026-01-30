@@ -232,3 +232,6 @@ a:hover { text-decoration:underline; }
   #contact-panel { right: 12px; bottom: 72px; width: 200px; }
 }
 
+/* Extra spacing between Digital Tools and Stock Predictor */
+#tools { margin-bottom: 6.5rem; }
+
